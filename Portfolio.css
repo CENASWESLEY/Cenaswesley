@@ -1195,10 +1195,9 @@ body {
     }
     .section_fourth-content_body_main_video{
     }
-    .section_fourth-content_body_main_video video{
+    .section_fourth-content_body_main_video iframe{
       width: 1000px;
       height: 600px;
-      pointer-events: none;
     }
 
     .section_fourth-content_body_submain{
