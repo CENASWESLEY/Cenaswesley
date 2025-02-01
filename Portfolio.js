@@ -1,5 +1,6 @@
 
 
+
  // Co-op
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -189,7 +190,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
   
-  //Fifth
+
+  // Fifith
 
   document.addEventListener("DOMContentLoaded", function () {
 
@@ -252,192 +254,69 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(style);
 
   });
-  
+  document.addEventListener("DOMContentLoaded", function () {
 
-  // เลื่อนภาพ graphic
-  document.addEventListener("DOMContentLoaded", () => {
-    try {
-        const swiperGraphic = new Swiper(".hall-swiper-container-graphic", {
-            slidesPerView: 5,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: "#arrow_right_graphic",
-                prevEl: "#arrow_left_graphic",
-            },
-            loop: false,
-            grabCursor: true,
-            watchOverflow: true,
-        });
+    // Define an array of project classes (can be dynamic if needed)
+    const projects = [
+        { class: 'graphic', imgGroupId: 'section_fifth-content_body_box-work_design_img_group' },
+        { class: 'web', imgGroupId: 'section_fifth-content_body_box-work_web_img_group' },
+        { class: 'mobile', imgGroupId: 'section_fifth-content_body_box-work_mobile_img_group' },
+        { class: 'presentation', imgGroupId: 'section_fifth-content_body_box-work_presentation_img_group' },
+        { class: '3d', imgGroupId: 'section_fifth-content_body_box-work_3d_img_group' },
+        { class: 'painting', imgGroupId: 'section_fifth-content_body_box-work_painting_img_group' }
+    ];
 
-        const mainImageGraphic = document.getElementById('section_fifth-content_body_box-work_design_img_group');
-        const slidesGraphic = document.querySelectorAll('#section_fifth-content_body_box-work_group_graphic .swiper-slide');
-
-        slidesGraphic.forEach(slide => {
-            slide.addEventListener('click', () => {
-                const img = slide.querySelector('img');
-                mainImageGraphic.src = img.src;
-                mainImageGraphic.alt = img.alt;
+    // Function to initialize each swiper
+    function initializeSwiper(project) {
+        try {
+            const swiper = new Swiper(`.hall-swiper-container-${project.class}`, {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: `#arrow_right_${project.class}`,
+                    prevEl: `#arrow_left_${project.class}`,
+                },
+                loop: false,
+                grabCursor: true,
+                watchOverflow: true,
             });
-        });
 
-    } catch (error) {
-        console.error("Error initializing Swiper for Graphic:", error);
+            const mainImage = document.getElementById(project.imgGroupId);
+            const slides = document.querySelectorAll(`#section_fifth-content_body_box-work_group_${project.class} .swiper-slide`);
+            const allImages = document.querySelectorAll(`.section_fifth-content_body_box-layout_work_tag_mini_box img`);
+
+            // Set the opacity of the first image to 1 initially
+            if (allImages.length > 0) {
+                allImages[0].style.opacity = 1; // Ensure the first image is fully visible
+            }
+
+            slides.forEach(slide => {
+                slide.addEventListener('click', () => {
+                    const img = slide.querySelector('img');
+                    mainImage.src = img.src;
+                    mainImage.alt = img.alt;
+
+                    // Reset opacity for all images
+                    allImages.forEach(image => {
+                        image.style.opacity = 0.4; // Reset opacity
+                    });
+
+                    // Set opacity for clicked image to 1, but not the first image
+                    if (img !== allImages[0]) {
+                        img.style.opacity = 1;
+                    }
+                });
+            });
+
+        } catch (error) {
+            console.error(`Error initializing Swiper for ${project.class}:`, error);
+        }
     }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-  try {
-      const swiperWeb = new Swiper(".hall-swiper-container-web", {
-          slidesPerView: 5,
-          spaceBetween: 10,
-          navigation: {
-              nextEl: "#arrow_right_web",
-              prevEl: "#arrow_left_web",
-          },
-          loop: false,
-          grabCursor: true,
-          watchOverflow: true,
-      });
-
-      const mainImageWeb = document.getElementById('section_fifth-content_body_box-work_web_img_group');
-      const slidesWeb = document.querySelectorAll('#section_fifth-content_body_box-work_group_web .swiper-slide');
-
-      slidesWeb.forEach(slide => {
-          slide.addEventListener('click', () => {
-              const img = slide.querySelector('img');
-              mainImageWeb.src = img.src;
-              mainImageWeb.alt = img.alt;
-          });
-      });
-
-  } catch (error) {
-      console.error("Error initializing Swiper for Web:", error);
-  }
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  try {
-      const swiper = new Swiper(".hall-swiper-container-mobile", {
-          slidesPerView: 5, // จำนวนภาพที่แสดงพร้อมกัน
-          spaceBetween: 10, // ช่องว่างระหว่างภาพ
-          navigation: {
-              nextEl: "#arrow_right_mobile", // ปุ่มเลื่อนขวา
-              prevEl: "#arrow_left_mobile", // ปุ่มเลื่อนซ้าย
-          },
-          loop: false, // ไม่วนภาพ
-          grabCursor: true, // เปลี่ยน cursor
-          watchOverflow: true, // ป้องกันปัญหา overflow
-      });
-
-      // เปลี่ยนภาพหลักเมื่อคลิกที่ slide
-      const mainImage = document.getElementById('section_fifth-content_body_box-work_mobile_img_group');
-      const slides = document.querySelectorAll('#section_fifth-content_body_box-work_group_mobile .swiper-slide');
-
-      slides.forEach(slide => {
-          slide.addEventListener('click', () => {
-              const img = slide.querySelector('img');
-              mainImage.src = img.src;
-              mainImage.alt = img.alt;
-          });
-      });
-
-  } catch (error) {
-      console.error("Error initializing Swiper:", error);
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  try {
-      const swiper = new Swiper(".hall-swiper-container-presentation", {
-          slidesPerView: 5, // จำนวนภาพที่แสดงพร้อมกัน
-          spaceBetween: 10, // ช่องว่างระหว่างภาพ
-          navigation: {
-              nextEl: "#arrow_right_presentation", // ปุ่มเลื่อนขวา
-              prevEl: "#arrow_left_presentation", // ปุ่มเลื่อนซ้าย
-          },
-          loop: false, // ไม่วนภาพ
-          grabCursor: true, // เปลี่ยน cursor
-          watchOverflow: true, // ป้องกันปัญหา overflow
-      });
-
-      // เปลี่ยนภาพหลักเมื่อคลิกที่ slide
-      const mainImage = document.getElementById('section_fifth-content_body_box-work_presentation_img_group');
-      const slides = document.querySelectorAll('#section_fifth-content_body_box-work_group_presentation .swiper-slide');
-
-      slides.forEach(slide => {
-          slide.addEventListener('click', () => {
-              const img = slide.querySelector('img');
-              mainImage.src = img.src;
-              mainImage.alt = img.alt;
-          });
-      });
-
-  } catch (error) {
-      console.error("Error initializing Swiper:", error);
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  try {
-      const swiper = new Swiper(".hall-swiper-container-3d", {
-          slidesPerView: 5, // จำนวนภาพที่แสดงพร้อมกัน
-          spaceBetween: 10, // ช่องว่างระหว่างภาพ
-          navigation: {
-              nextEl: "#arrow_right_3d", // ปุ่มเลื่อนขวา
-              prevEl: "#arrow_left_3d", // ปุ่มเลื่อนซ้าย
-          },
-          loop: false, // ไม่วนภาพ
-          grabCursor: true, // เปลี่ยน cursor
-          watchOverflow: true, // ป้องกันปัญหา overflow
-      });
-
-      // เปลี่ยนภาพหลักเมื่อคลิกที่ slide
-      const mainImage = document.getElementById('section_fifth-content_body_box-work_3d_img_group');
-      const slides = document.querySelectorAll('#section_fifth-content_body_box-work_group_3d .swiper-slide');
-
-      slides.forEach(slide => {
-          slide.addEventListener('click', () => {
-              const img = slide.querySelector('img');
-              mainImage.src = img.src;
-              mainImage.alt = img.alt;
-          });
-      });
-
-  } catch (error) {
-      console.error("Error initializing Swiper:", error);
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  try {
-      const swiper = new Swiper(".hall-swiper-container-painting", {
-          slidesPerView: 5, // จำนวนภาพที่แสดงพร้อมกัน
-          spaceBetween: 10, // ช่องว่างระหว่างภาพ
-          navigation: {
-              nextEl: "#arrow_right_painting", // ปุ่มเลื่อนขวา
-              prevEl: "#arrow_left_painting", // ปุ่มเลื่อนซ้าย
-          },
-          loop: false, // ไม่วนภาพ
-          grabCursor: true, // เปลี่ยน cursor
-          watchOverflow: true, // ป้องกันปัญหา overflow
-      });
-
-      // เปลี่ยนภาพหลักเมื่อคลิกที่ slide
-      const mainImage = document.getElementById('section_fifth-content_body_box-work_painting_img_group');
-      const slides = document.querySelectorAll('#section_fifth-content_body_box-work_group_painting .swiper-slide');
-
-      slides.forEach(slide => {
-          slide.addEventListener('click', () => {
-              const img = slide.querySelector('img');
-              mainImage.src = img.src;
-              mainImage.alt = img.alt;
-          });
-      });
-
-  } catch (error) {
-      console.error("Error initializing Swiper:", error);
-  }
+    // Initialize swiper for all projects
+    projects.forEach(project => {
+        initializeSwiper(project);
+    });
 });
 
 
