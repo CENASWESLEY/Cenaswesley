@@ -2209,7 +2209,6 @@ body {
 @media only screen and (max-width: 430px) {
 
   html, body {
-    width: 430px;
     height: 100%;
     margin: 0; /* ป้องกัน margin ที่อาจทำให้พื้นที่ไม่เต็ม */
     overflow-x: hidden;
