@@ -742,7 +742,7 @@ body {
 
       position: relative;
       width: 1920px;
-      margin: 10rem 0;
+      margin: 10rem auto;
       
     }
     .section_second-content {
@@ -2079,7 +2079,7 @@ body {
       padding: 50px 20px;
       text-align: center;
       border: 1px solid var(--bg-main-color-black2);
-
+      margin:  0 auto;
   }
   .section_seventh-content{
     flex-direction: column
@@ -2211,6 +2211,7 @@ body {
   html, body {
     height: 100%;
     margin: 0; /* ป้องกัน margin ที่อาจทำให้พื้นที่ไม่เต็ม */
+
 }
 
 .section_first-header_content-menu_right_content_group {
@@ -2224,6 +2225,7 @@ body {
   /*========== section_first ==========*/
 
   .section_first{
+
     position: relative;
     width: 100%;
   }
