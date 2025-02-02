@@ -306,6 +306,7 @@ body {
 
   /*========== section_first ==========*/
 
+ 
   .section_first{
     position: relative;
     width: 1920px;
@@ -740,6 +741,7 @@ body {
     .section_second{
 
       position: relative;
+      width: 1920px;
       margin: 10rem 0;
       
     }
@@ -1364,7 +1366,8 @@ body {
     /*========== section_fifth ==========*/
 
     .section_fifth-content{
-      margin: 20rem 0 10rem 0;
+      margin: 20rem auto 10rem auto;
+      width: 1920px;
 
     }
     .section_fifth-content_body_box{
@@ -2069,7 +2072,7 @@ body {
 
     .section_seventh {
       position: relative;
-      width: 100%;
+      width: 1920px;
       height: 100%;
       background-color: var(--bg-main-color-black);
       color: #fff;
@@ -2409,7 +2412,7 @@ body {
 
 
   .section_second{
-
+    width: 100%;
     margin: 0 auto;
     z-index: 1;
   }
@@ -2737,7 +2740,7 @@ body {
 
     .section_fifth-content{
       margin: 15rem 0 10rem 0;
-
+      width: 100%;
     }
     .section_fifth-content_body_box{
       position: relative;
