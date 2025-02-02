@@ -2211,6 +2211,7 @@ body {
   html, body {
     height: 100%;
     margin: 0; /* ป้องกัน margin ที่อาจทำให้พื้นที่ไม่เต็ม */
+
 }
 
 .section_first-header_content-menu_right_content_group {
@@ -2644,7 +2645,7 @@ body {
     margin-bottom: 2rem !important;
   }
   .section_fourth-content_body_box_right{
-    width: 416px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
   }
