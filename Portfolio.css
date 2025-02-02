@@ -108,7 +108,8 @@ body {
     background-color: var(--body-color);
     color: var(--text-menu-color);
     background: var(--bg-main-color-black);
-
+    width: 100%;
+    overflow-x: hidden;
   }
   
   h1 {
@@ -2209,10 +2210,7 @@ body {
 @media only screen and (max-width: 430px) {
 
 body {
-    width: 430px;
-    height: 100%;
-    margin: 0 auto; /* ป้องกัน margin ที่อาจทำให้พื้นที่ไม่เต็ม */
-    overflow-x: hidden;
+
 }
 
 .section_first-header_content-menu_right_content_group {
@@ -2697,7 +2695,7 @@ body {
 
 
   .section_fourth-content_body_box_left{
-    width: 450px;
+    width: 430px;
     flex-direction: column;
   }
   .section_fourth-content_body_main_video iframe{
@@ -2983,9 +2981,8 @@ body {
 
  .section_sixth-content{
   margin: 10rem auto 0 auto;
-  padding: 0 0 3rem 0;
   background: var(--bg-main-color-white);
-  width: 100%;
+  width: 430px;
   }
   .section_sixth-content-body{
     width: 100%;
