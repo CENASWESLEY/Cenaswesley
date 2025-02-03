@@ -2207,12 +2207,10 @@ body {
   
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 430px) {
 
 body {
-    width: 450px;
-    height: 100%;
-    margin: 0 auto;
+
 }
 
 .section_first-header_content-menu_right_content_group {
@@ -2280,7 +2278,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    object-position: -260px 0 ;
+    object-position: -280px 0 ;
     z-index: -2;
     
   }
@@ -2984,7 +2982,7 @@ body {
  .section_sixth-content{
   margin: 10rem auto 0 auto;
   background: var(--bg-main-color-white);
-  width: 100%;
+  width: 430px;
   }
   .section_sixth-content-body{
     width: 100%;
