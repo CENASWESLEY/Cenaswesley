@@ -93,8 +93,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-
-
  // logo-slider
 
  document.addEventListener("DOMContentLoaded", function () {
@@ -148,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check the current state and toggle
         if (iconImg.src.includes('Plus.svg')) {
             // Change the icon to Minus
-            iconImg.src = '/assets/fourth-section/Icons/Minus.svg';
+            iconImg.src = './assets/fourth-section/Icons/Minus.svg';
 
             // Show the content with animation
             content.style.display = 'flex';
@@ -157,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
         } else {
             // Change the icon to Plus
-            iconImg.src = '/assets/fourth-section/Icons/Plus.svg';
+            iconImg.src = './assets/fourth-section/Icons/Plus.svg';
 
             // Hide the content with animation
             content.style.maxHeight = '0';
@@ -213,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check the current state and toggle
         if (iconImg.src.includes('Plus.svg')) {
             // Change the icon to Minus
-            iconImg.src = '/assets/fifth-section/Icons/Minus.svg';
+            iconImg.src = './assets/fifth-section/Icons/Minus.svg';
 
             // Show the content with animation
             content.style.display = 'flex';
@@ -222,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
         } else {
             // Change the icon to Plus
-            iconImg.src = '/assets/fifth-section/Icons/Plus.svg';
+            iconImg.src = './assets/fifth-section/Icons/Plus.svg';
 
             // Hide the content with animation
             content.style.maxHeight = '0';
