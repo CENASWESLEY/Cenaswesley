@@ -1,1 +1,3 @@
-https://github.com/CENASWESLEY/Cenaswesley/blob/65e806ea72fa012ad7a31cf022c1715c0c7d9906/Cover.png
+
+![image](https://github.com/CENASWESLEY/Cenaswesley/blob/c01ccc29468c12216a46c01fec6d8af38ccaf238/Mock-up.png)
+
