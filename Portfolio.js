@@ -135,7 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
         'miniproject1',
         'miniproject2',
         'project1',
-        'project2'
+        'project2',
+        'project3'
     ];
 
     // Function to toggle content visibility
