@@ -184,6 +184,35 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(style);
 
   });
+
+  //fourth
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popupImage");
+    const closeBtn = document.querySelector(".popup .close");
+
+    thumbnails.forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        popup.style.display = "block";
+        popupImg.src = thumb.src;
+        console.log("Click")
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+
+    // ปิด popup เมื่อคลิกนอกภาพ
+    popup.addEventListener("click", (e) => {
+      if (e.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+
   
 //fifth
   document.addEventListener("DOMContentLoaded", () => {
