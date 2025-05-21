@@ -3331,13 +3331,16 @@ body {
   /*========== section_fifth ==========*/
   .section_fifth{
     width: 100%;
-    position: relative;
     margin: 0 auto;
+  }
+  .section_fifth-content_body_box_bg{
+    position: relative;
+    width: 400px !important;
   }
   .section_fifth-content_body_box_bg_left{
     position: absolute;
-    top: 3.5rem;
-    left: 1rem;
+    top: -2rem;
+    left: 15rem;
 
   }
   .section_fifth-content_body_box_bg_left img{
@@ -3352,14 +3355,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top left, var(--bg-main-color-white) 20%, transparent);
+    background: linear-gradient(to top left, var(--bg-main-color-white) 30%, transparent);
     z-index: 1; /* วาง Gradient ด้านบน */
     pointer-events: none; /* ป้องกันไม่ให้ Gradient มีผลต่อการคลิก */
   }
   .section_fifth-content_body_box_bg_right{
     position: absolute;
-    right: 1rem;
-    top: 3.5rem;
+    right: 15rem;
+    top: -1.5rem;
   }
   .section_fifth-content_body_box_bg_right img{
     width: 180px;
@@ -3373,7 +3376,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top right, var(--bg-main-color-white) 20%, transparent);
+  background: linear-gradient(to top right, var(--bg-main-color-white) 30%, transparent);
   z-index: 1; /* วาง Gradient ด้านบน */
   pointer-events: none; /* ป้องกันไม่ให้ Gradient มีผลต่อการคลิก */
 }
@@ -3390,7 +3393,7 @@ body {
   }
   .section_fifth-content_body_box-details_title_description{
     width: 350px;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     text-align: justify;
     margin: 1rem 0;
   }
@@ -3996,7 +3999,7 @@ background: radial-gradient(
 }
 
 
-@media (min-width: 1100px) and (max-width: 1400px){
+@media (min-width: 1100px) and (max-width: 1919px){
 
   body {
     width: 100%;
@@ -4834,7 +4837,7 @@ background: radial-gradient(
   }
   .section_fifth-content_body_box-details_title_description{
     width: 800px;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     text-align: justify;
     margin: 1rem 0;
   }
