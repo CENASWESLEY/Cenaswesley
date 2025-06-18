@@ -483,10 +483,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //เลื่อนวิดีโอซ้ายขวา
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { 
   try {
     const swiper = new Swiper("#section_seventh-content-body_albums_list_cover_img-sekiro", {
-      slidesPerView: 3, // จำนวนภาพที่แสดงพร้อมกัน
+      slidesPerView: 5, // จำนวนภาพที่แสดงพร้อมกัน
       spaceBetween: 6, // ช่องว่างระหว่างภาพ
       navigation: {
         nextEl: "#arrow_right-sekiro", // ปุ่มเลื่อนขวา
