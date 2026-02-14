@@ -780,12 +780,10 @@ button {
     overflow: hidden;
   }
   .section_second-content_body-show_box img{
-    
     width: 100%; 
     height: 100%;
     object-fit: cover; 
-    transform: scale(1);
-
+    transform: scale(2);
   }
 
   .section_second-content_body-details_minititle_box{
