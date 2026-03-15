@@ -784,6 +784,7 @@ button {
     height: 100%;
     object-fit: cover; 
     transform: scale(2);
+    object-position: -10px -80px;
   }
 
   .section_second-content_body-details_minititle_box{
