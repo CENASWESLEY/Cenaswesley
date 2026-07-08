@@ -185,34 +185,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-  //fourth
+//fourth
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('global-popup');
+    const popupImg = document.getElementById('global-popup-img');
+    const closeBtn = document.querySelector('.image-popup-close');
 
- document.addEventListener("DOMContentLoaded", function () {
-    const thumbnails = document.querySelectorAll(".thumbnail");
-    const popup = document.getElementById("popup");
-    const popupImg = document.getElementById("popupImage");
-    const closeBtn = document.querySelector(".popup .close");
-
-    thumbnails.forEach((thumb) => {
-      thumb.addEventListener("click", () => {
-        popup.style.display = "block";
-        popupImg.src = thumb.src;
-        console.log("Click")
-      });
+    // ดักจับการคลิกที่รูปภาพที่มีคลาส clickable-img ทั่วทั้งหน้าจอ
+    document.addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('clickable-img')) {
+            popup.style.display = "block";
+            popupImg.src = e.target.src;
+        }
     });
 
-    closeBtn.addEventListener("click", () => {
-      popup.style.display = "none";
-    });
-
-    // ปิด popup เมื่อคลิกนอกภาพ
-    popup.addEventListener("click", (e) => {
-      if (e.target === popup) {
+    // คลิกปุ่ม X เพื่อปิด
+    closeBtn.addEventListener('click', function() {
         popup.style.display = "none";
-      }
     });
-  });
 
+    // คลิกพื้นที่ว่างด้านนอกรูปภาพเพื่อปิด Popup
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
   
 //fifth
   document.addEventListener("DOMContentLoaded", () => {
@@ -483,6 +481,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //เลื่อนวิดีโอซ้ายขวา
 
+document.addEventListener("DOMContentLoaded", () => { 
+  try {
+    const swiper = new Swiper("#section_seventh-content-body_albums_list_cover_img-wukong", {
+      slidesPerView: 5, // จำนวนภาพที่แสดงพร้อมกัน
+      spaceBetween: 6, // ช่องว่างระหว่างภาพ
+      navigation: {
+        nextEl: "#arrow_right-wukong", // ปุ่มเลื่อนขวา
+        prevEl: "#arrow_left-wukong", // ปุ่มเลื่อนซ้าย
+      },
+      loop: false, // ไม่วนกลับไปจุดเริ่มต้น
+      grabCursor: true, // เปลี่ยน cursor เป็นแบบลากได้
+      watchOverflow: true, // ป้องกันปัญหา overflow
+    });
+
+  } catch (error) {
+  }
+});
 document.addEventListener("DOMContentLoaded", () => { 
   try {
     const swiper = new Swiper("#section_seventh-content-body_albums_list_cover_img-sekiro", {
