@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "swiper": "^11.2.1"
+    "swiper": "^14.0.7"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6"
   }
 }
