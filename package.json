@@ -1,8 +1,19 @@
 {
+  "name": "cenaswesley-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint src/scripts/**/*.js"
+  },
   "dependencies": {
     "swiper": "^14.0.7"
   },
   "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
     "prettier": "3.9.6"
   }
 }

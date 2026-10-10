@@ -1,0 +1,6 @@
+/*========== Variables Dark theme ==========*/
+body.dark {
+  --text-white: #101113;
+  --text-orange: #f26716;
+  --text-black: #ffffff;
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Portfolio</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/first-section/header/Logo/Logo-1.png"
+      type="image/x-icon"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/styles/main.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Locomotive Scroll CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css"
+    />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <main id="app">
+      <div class="module-slot" data-section="hero" data-src="src/sections/hero/hero.html"></div>
+      <div class="module-slot" data-section="about" data-src="src/sections/about/about.html"></div>
+      <div
+        class="module-slot"
+        data-section="professional-experience"
+        data-src="src/sections/professional-experience/professional-experience.html"
+      ></div>
+      <div
+        class="module-slot"
+        data-section="awards"
+        data-src="src/sections/awards/awards.html"
+      ></div>
+      <div
+        class="module-slot"
+        data-section="projects"
+        data-src="src/sections/projects/projects.html"
+      ></div>
+      <div
+        class="module-slot"
+        data-section="creative-portfolio"
+        data-src="src/sections/creative-portfolio/creative-portfolio.html"
+      ></div>
+      <div
+        class="module-slot"
+        data-section="channel"
+        data-src="src/sections/channel/channel.html"
+      ></div>
+      <div
+        class="module-slot"
+        data-section="contact"
+        data-src="src/sections/contact/contact.html"
+      ></div>
+    </main>
+
+    <div class="image-popup-overlay" id="global-popup" aria-hidden="true">
+      <button class="image-popup-close" type="button" aria-label="Close image preview">
+        &times;
+      </button>
+      <img
+        class="image-popup-container"
+        id="global-popup-img"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        alt=""
+      />
+    </div>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Locomotive Scroll JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script type="module" src="src/scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.2.0/wavesurfer.min.js"></script>
+  </body>
+</html>

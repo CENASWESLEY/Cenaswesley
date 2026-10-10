@@ -1,0 +1,166 @@
+/*========== CLASS CUSTOM ==========*/
+
+.font-size-big {
+  font-size: var(--big-font-size-80);
+}
+.font-size-60 {
+  font-size: 60px;
+}
+.font-size-50 {
+  font-size: var(--h1-font-size-50);
+}
+.font-size-40 {
+  font-size: 40px;
+}
+.font-size-32 {
+  font-size: 32px;
+}
+.font-size-24 {
+  font-size: var(--h2-font-size-24);
+}
+.font-size-20 {
+  font-size: var(--h3-font-size-20);
+}
+.font-size-18 {
+  font-size: var(--h4-font-size-18);
+}
+.font-size-16 {
+  font-size: var(--h5-font-size-16);
+}
+.font-size-14 {
+  font-size: var(--h5-font-size-14);
+}
+.font-size-12 {
+  font-size: var(--h5-font-size-12);
+}
+.font-size-10 {
+  font-size: var(--h5-font-size-10);
+}
+.font-size-8 {
+  font-size: var(--h5-font-size-8);
+}
+.font-size-6 {
+  font-size: var(--h5-font-size-6);
+}
+.font-epilogue {
+  font-family: "Epilogue", sans-serif;
+}
+.font-dmsans {
+  font-family: "DM Sans", sans-serif;
+}
+.font-sora {
+  font-family: "Sora", sans-serif;
+}
+.font-plus {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.font-urbanist {
+  font-family: "Urbanist", sans-serif;
+}
+.font-royale {
+  font-family: "Bonheur Royale", serif;
+}
+.font-outfit {
+  font-family: "Outfit", serif;
+}
+.font-jp {
+  font-family: "Noto Sans JP", serif;
+}
+.thin {
+  font-weight: var(--font-thin);
+}
+.exlight {
+  font-weight: var(--font-exlight);
+}
+.light {
+  font-weight: var(--font-light);
+}
+.regular {
+  font-weight: var(--font-regular);
+}
+.medium {
+  font-weight: var(--font-medium);
+}
+.semi-bold {
+  font-weight: var(--font-semibold);
+}
+.bold {
+  font-weight: var(--font-bold);
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.text-black {
+  color: var(--text-black);
+}
+.text-gray {
+  color: var(--text-gray);
+}
+.text-white {
+  color: var(--text-white);
+}
+.text-orange {
+  color: var(--text-orange);
+}
+.letter-spacing-25 {
+  letter-spacing: 0.25rem;
+}
+.minititlebox {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg-main-color-orange);
+  box-shadow: 0 0 5px var(--bg-main-color-orange);
+}
+.gradient-text {
+  background: linear-gradient(90deg, var(--bg-main-color-orange), var(--bg-main-color-white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animation-orange {
+  text-align: center;
+
+  background: linear-gradient(
+    to right,
+    #ffeee3 0%,
+    #f26716 30%,
+    #db4007 40%,
+    #db4007 60%,
+    #f26716 70%,
+    #ffdfcc 100%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 5s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+
+/*========== SCROLL BAR ==========*/

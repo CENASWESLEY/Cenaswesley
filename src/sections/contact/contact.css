@@ -1,0 +1,130 @@
+/*========== contact ==========*/
+
+.contact {
+  position: relative;
+  width: 1920px;
+  height: 100%;
+  background-color: var(--bg-main-color-black);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border: 1px solid var(--bg-main-color-black2);
+  margin: 0 auto;
+}
+.contact-content {
+  flex-direction: column;
+}
+
+.contact-header-title {
+  margin-bottom: 30px;
+}
+
+.contact-header-highlight {
+  font-weight: 600;
+  display: block;
+  color: #fff;
+}
+
+.highlighted-text {
+  color: var(--bg-main-color-orange);
+  text-decoration: underline;
+}
+
+.contact-body {
+  width: 1300px;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  margin-top: 30px;
+  align-items: start;
+}
+
+.contact-body-left,
+.contact-body-middle,
+.contact-body-right {
+  text-align: left;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px var(--bg-main-color-black) inset;
+  -webkit-text-fill-color: var(--bg-main-color-white);
+}
+.contact-newsletter {
+  width: 300px;
+}
+
+.contact-logo-img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.location-title,
+.contact-title,
+.newsletter-title {
+  width: 220px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+}
+.contact-subtitle {
+  width: 220px;
+}
+.contact-contact-info,
+.contact-location {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.newsletter-input {
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.newsletter-text {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid var(--text-gray);
+  background: transparent;
+  color: #fff;
+  resize: none;
+}
+
+.newsletter-button {
+  color: var(--text-white);
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.newsletter-button {
+}
+
+.newsletter-button img {
+  margin-left: 10px;
+  width: 12px;
+}
+
+.contact-footer {
+  width: 1250px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.footer-year {
+  color: var(--bg-main-color-orange);
+}
+.social-icons {
+  align-items: center;
+  gap: 1rem;
+}

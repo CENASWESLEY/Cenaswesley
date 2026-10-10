@@ -1,0 +1,28 @@
+export const professionalExperienceCompanies = [
+  {
+    id: "seagate",
+    shortName: "Seagate",
+    companyName: "Seagate Technology",
+    role: "Software Engineer",
+    period: "31 August 2025 - Present",
+    year: "2025 - Present",
+    employmentType: "Full-time",
+    summary: "Reliability software, Python tooling, automation, and full-stack engineering tools.",
+    accentColor: "#6bd957",
+    logo: "./assets/professional-experience/logos/seagate-logo.png",
+    source: "src/sections/professional-experience/companies/seagate.html",
+  },
+  {
+    id: "mea",
+    shortName: "MEA",
+    companyName: "Metropolitan Electricity Authority",
+    role: "Cooperative Education",
+    period: "01 April 2024 - October 2024",
+    year: "2024",
+    employmentType: "Co-op",
+    summary: "IoT projects connecting electrical engineering, web applications, and mobile apps.",
+    accentColor: "#f26716",
+    logo: "./assets/professional-experience/logos/mea-logo.jpg",
+    source: "src/sections/professional-experience/companies/mea.html",
+  },
+];
