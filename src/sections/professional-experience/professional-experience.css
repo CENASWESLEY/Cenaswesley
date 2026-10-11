@@ -170,7 +170,6 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  margin-bottom: 2rem;
   color: var(--seagate-muted);
   letter-spacing: 0.32rem;
   text-transform: uppercase;
@@ -1232,8 +1231,7 @@
 
 @media (max-width: 1099px) {
   .professional-experience-hero {
-    min-height: 560px;
-    padding: 4rem 1.5rem;
+    min-height: 100%;
   }
 
   .professional-experience-hero-visual {
@@ -1261,7 +1259,6 @@
     width: min(430px, calc(100% - 2rem));
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin-top: 3rem;
   }
 
   .professional-experience-seagate-hero,
@@ -1272,7 +1269,6 @@
 
   .professional-experience-seagate-hero {
     min-height: max-content;
-    padding: 3rem 0 1rem;
   }
 
   .professional-experience-seagate-hero h3,
@@ -1520,7 +1516,7 @@
 }
 
 .professional-experience-company-divider-line {
-  margin: 3rem auto;
+  margin: 1rem auto;
   width: 1600px;
   height: 1px;
   background: rgb(223, 223, 223);
@@ -1648,8 +1644,7 @@
 @media (max-width: 1099px) {
   .professional-experience-workspace {
     width: min(720px, calc(100% - 2rem));
-    gap: 5rem;
-    margin-top: 3rem;
+    gap: 2rem;
   }
 
   .professional-experience-seagate-layout {
@@ -1764,7 +1759,7 @@
 
 @media (max-width: 640px) {
   .professional-experience-hero {
-    min-height: 520px;
+    min-height: 100%;
   }
 
   .professional-experience-hero::after {
@@ -1779,15 +1774,107 @@
     font-size: 0.82rem;
   }
 
-  .professional-experience-company-divider-main {
-    display: grid;
-    grid-template-columns: 52px minmax(0, 1fr);
-    gap: 0.85rem;
+  .professional-experience-workspace {
+    gap: 1rem;
+  }
+
+  .professional-experience-seagate-hero,
+  .professional-experience-seagate-layout {
+    width: calc(100% - 2rem);
+    max-width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .professional-experience-seagate-hero {
+    gap: 1.5rem;
+  }
+
+  .professional-experience-seagate-hero-copy,
+  .professional-experience-seagate-brand,
+  .professional-experience-seagate-brand img,
+  .professional-experience-seagate-kicker,
+  .professional-experience-seagate-tagline,
+  .professional-experience-seagate-intro,
+  .professional-experience-seagate-pill-row {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .professional-experience-seagate-kicker {
+    gap: 0.65rem;
+    letter-spacing: 0.22rem;
+  }
+
+  .professional-experience-seagate-kicker div {
+    flex: 1 1 32px;
+    min-width: 32px;
+  }
+
+  .professional-experience-seagate-hero h3 {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+    text-align: center;
+    text-justify: center;
+    color: #6bd957;
+  }
+
+  .professional-experience-seagate-tagline {
+    font-size: 0.9rem;
+    letter-spacing: 0.34rem;
+    overflow-wrap: anywhere;
+  }
+
+  .professional-experience-seagate-intro {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+
+  .professional-experience-seagate-pill-row {
+    gap: 0.55rem;
+  }
+
+  .professional-experience-seagate-pill-row span {
+    min-width: 0;
+    max-width: 100%;
+    font-size: 0.74rem;
+    padding: 0.6rem 0.8rem;
+    overflow-wrap: anywhere;
+  }
+
+  .professional-experience-company-profile {
+    margin: 0;
+  }
+
+  .professional-experience-company-divider {
+    margin-bottom: 0;
+    padding: 1rem 0;
   }
 
   .professional-experience-company-divider-card {
-    grid-template-columns: minmax(0, 1fr) 42px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .professional-experience-company-divider-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .professional-experience-company-divider-main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .professional-experience-company-divider-main img {
@@ -1795,11 +1882,18 @@
     height: 52px;
   }
 
+  .professional-experience-company-divider-main p {
+    font-size: 0.82rem;
+  }
+
   .professional-experience-company-divider-main h3 {
-    font-size: 2.35rem;
+    font-size: 2.1rem;
+    line-height: 0.95;
+    text-align: center;
   }
 
   .professional-experience-company-divider-meta {
+    margin: 1rem auto;
     gap: 0.45rem;
   }
 
@@ -1812,6 +1906,36 @@
     font-size: 0.82rem;
   }
 
+  .professional-experience-company-divider-line {
+    margin: 1rem auto 0;
+  }
+
+  .professional-experience-company-profile-content .professional-experience-company-meta-grid {
+    border: 1px solid rgba(16, 17, 19, 0.12);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.82);
+    gap: 0;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .professional-experience-company-profile-content .professional-experience-company-meta-grid div {
+    border-top: 1px solid rgba(16, 17, 19, 0.1);
+    padding: 1rem 0;
+  }
+
+  .professional-experience-company-profile-content
+    .professional-experience-company-meta-grid
+    div:first-child {
+    border-top: 0;
+  }
+
+  .professional-experience-company-profile-content .professional-experience-company-meta-grid p {
+    color: var(--text-gray);
+    line-height: 1.35;
+  }
+
   .professional-experience-seagate-overview {
     padding: 1rem;
   }
@@ -1821,9 +1945,9 @@
   }
 
   .professional-experience-company-divider-toggle {
+    margin: 0 auto;
     width: 42px;
     height: 42px;
-    margin-top: 2.4rem;
   }
 
   .professional-experience-seagate-project-copy h4 {
